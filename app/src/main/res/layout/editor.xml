@@ -1,202 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-     xmlns:android="http://schemas.android.com/apk/res/android"
-     xmlns:app="http://schemas.android.com/apk/res-auto"
-     xmlns:tools="http://schemas.android.com/tools"
-     android:layout_height="match_parent"
-     android:layout_width="match_parent"
-     android:orientation="vertical"
-     android:fitsSystemWindows="true"
-     android:clipToPadding="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
     <LinearLayout
-         android:layout_height="match_parent"
-         android:layout_width="match_parent"
-         android:orientation="vertical"
-         android:id="@+id/linear4">
+        android:id="@+id/linear4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
-             android:layout_height="wrap_content"
-             android:layout_width="match_parent"
-             android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <HorizontalScrollView
-                 android:layout_height="wrap_content"
-                 android:layout_width="match_parent"
-                 android:scrollbars="none"
-                 android:background="@color/button_background"
-                 android:layout_weight="1"
-                 android:id="@+id/top_scroll">
+                android:id="@+id/top_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/button_background"
+                android:scrollbars="none">
 
                 <LinearLayout
-                     android:layout_height="wrap_content"
-                     android:layout_width="wrap_content"
-                     android:gravity="center_vertical"
-                     android:padding="2dp"
-                     android:orientation="horizontal"
-                     android:id="@+id/topLinear">
+                    android:id="@+id/topLinear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
 
                     <ImageView
-                         android:layout_height="35dp"
-                         android:layout_width="35dp"
-                         android:src="@drawable/screen_rotation"
-                         style="@style/images_style"
-                         android:id="@+id/rotateScreen" />
+                        android:id="@+id/rotateScreen"
+                        style="@style/images_style"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/screen_rotation" />
 
                     <ImageView
-                         android:layout_height="35dp"
-                         android:layout_width="35dp"
-                         android:src="@drawable/ic_add_black"
-                         style="@style/images_style"
-                         android:id="@+id/addBody" />
+                        android:id="@+id/addBody"
+                        style="@style/images_style"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_add_black" />
 
                     <LinearLayout
-                         android:layout_height="wrap_content"
-                         android:layout_width="260dp"
-                         android:gravity="center_vertical"
-                         android:background="@drawable/imgs_style"
-                         android:orientation="horizontal"
-                         android:layout_marginRight="5dp"
-                         android:id="@+id/sceneLinear">
+                        android:id="@+id/sceneLinear"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/imgs_style"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
 
                         <TextView
-                             android:layout_height="wrap_content"
-                             android:layout_width="wrap_content"
-                             android:padding="8dp"
-                             android:textSize="12sp"
-                             android:textColor="@color/text_color"
-                             android:id="@+id/textview2"
-                             android:text="Scene"
-                             android:textStyle="bold" />
+                            android:id="@+id/textview2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="Scene"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
                         <androidx.appcompat.widget.AppCompatSpinner
-                             android:layout_height="wrap_content"
-                             android:layout_width="match_parent"
-                             android:padding="2dp"
-                             android:spinnerMode="dropdown"
-                             android:layout_weight="1"
-                             android:id="@+id/scenesSpinner" />
+                            android:id="@+id/scenesSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="2dp"
+                            android:spinnerMode="dropdown" />
 
                         <ImageView
-                             android:layout_height="35dp"
-                             android:layout_width="35dp"
-                             android:src="@drawable/ic_delete_black"
-                             style="@style/images_style"
-                             android:id="@+id/deleteScene" />
+                            android:id="@+id/deleteScene"
+                            style="@style/images_style"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_delete_black" />
 
                         <ImageView
-                             android:layout_height="35dp"
-                             android:layout_width="35dp"
-                             android:src="@drawable/copy_icon"
-                             style="@style/images_style"
-                             android:id="@+id/copyScene" />
+                            android:id="@+id/copyScene"
+                            style="@style/images_style"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/copy_icon" />
 
                         <ImageView
-                             android:layout_height="35dp"
-                             android:layout_width="35dp"
-                             android:src="@drawable/edit_icon"
-                             style="@style/images_style"
-                             android:id="@+id/renameScene" />
+                            android:id="@+id/renameScene"
+                            style="@style/images_style"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/edit_icon" />
 
                     </LinearLayout>
 
                     <ImageView
-                         android:layout_height="35dp"
-                         android:layout_width="35dp"
-                         android:src="@drawable/save_icon"
-                         style="@style/images_style"
-                         android:id="@+id/save" />
+                        android:id="@+id/save"
+                        style="@style/images_style"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/save_icon" />
 
                     <ImageView
-                         android:layout_height="35dp"
-                         android:layout_width="35dp"
-                         android:src="@drawable/ic_description_black"
-                         style="@style/images_style"
-                         android:id="@+id/files_manager" />
+                        android:id="@+id/files_manager"
+                        style="@style/images_style"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_description_black" />
 
                     <ImageView
-                         android:layout_height="35dp"
-                         android:layout_width="35dp"
-                         android:src="@drawable/palette_swatch"
-                         style="@style/images_style"
-                         android:id="@+id/sceneColor" />
+                        android:id="@+id/sceneColor"
+                        style="@style/images_style"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/palette_swatch" />
 
                     <ImageView
-                         android:layout_height="35dp"
-                         android:layout_width="35dp"
-                         android:src="@drawable/lock"
-                         style="@style/images_style"
-                         android:id="@+id/lock" />
+                        android:id="@+id/lock"
+                        style="@style/images_style"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/lock" />
 
                     <ProgressBar
-                         android:layout_height="match_parent"
-                         android:layout_width="40dp"
-                         android:visibility="gone"
-                         android:id="@+id/progress" />
+                        android:id="@+id/progress"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone" />
 
                 </LinearLayout>
 
             </HorizontalScrollView>
 
             <ImageView
-                 android:layout_height="match_parent"
-                 android:layout_width="35dp"
-                 android:src="@drawable/back_arrow"
-                 app:tint="@color/text_color"
-				 android:background="@color/button_background"
-                 android:id="@+id/back" />
+                android:id="@+id/back"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:background="@color/button_background"
+                android:src="@drawable/back_arrow"
+                app:tint="@color/text_color" />
 
         </LinearLayout>
 
         <FrameLayout
-             android:layout_height="match_parent"
-             android:layout_width="match_parent"
-             android:orientation="horizontal"
-             android:layout_weight="1"
-             android:id="@+id/frame">
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <LinearLayout
-                 android:layout_height="match_parent"
-                 android:layout_width="match_parent"
-                 android:gravity="center_vertical"
-                 android:translationZ="99dp"
-                 android:id="@+id/propsLinear">
+                android:id="@+id/propsLinear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:translationZ="99dp"
+                android:orientation="horizontal">
 
             </LinearLayout>
 
             <com.star4droid.star2d.Items.Editor
-                 android:layout_height="match_parent"
-                 android:layout_width="match_parent"
-                 android:id="@+id/editor" />
+                android:id="@+id/editor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
             <LinearLayout
-                 android:layout_height="match_parent"
-                 android:layout_width="wrap_content"
-                 android:orientation="horizontal"
-                 android:translationZ="9999dp"
-                 android:layout_gravity="right">
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:translationZ="9999dp">
 
                 <ImageView
-                     android:layout_height="35dp"
-                     android:layout_width="35dp"
-                     android:src="@drawable/package_variant"
-                     android:layout_marginRight="2dp"
-                     style="@style/images_style"
-                     android:id="@+id/right_swipe"
-                     android:layout_gravity="center_vertical|right" />
+                    android:id="@+id/right_swipe"
+                    style="@style/images_style"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/package_variant" />
 
                 <LinearLayout
-                     android:layout_height="match_parent"
-                     android:layout_width="1px"
-                     android:gravity="right"
-                     android:background="@color/button_background"
-                     android:orientation="horizontal"
-                     android:id="@+id/right_linear">
+                    android:id="@+id/right_linear"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/button_background"
+                    android:gravity="right"
+                    android:orientation="horizontal">
 
                     <androidx.viewpager2.widget.ViewPager2
-                         android:layout_height="match_parent"
-                         android:layout_width="match_parent"
-                         android:id="@+id/right_vp" />
+                        android:id="@+id/right_vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
 
                 </LinearLayout>
 
@@ -205,117 +205,117 @@
         </FrameLayout>
 
         <HorizontalScrollView
-             android:layout_height="wrap_content"
-             android:layout_width="match_parent"
-             android:scrollbars="none"
-             android:background="@color/button_background"
-             android:id="@+id/bottom_scroll">
+            android:id="@+id/bottom_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_background"
+            android:scrollbars="none">
 
             <LinearLayout
-                 android:layout_height="wrap_content"
-                 android:layout_width="wrap_content"
-                 android:gravity="center_vertical"
-                 android:padding="2dp"
-                 android:orientation="horizontal"
-                 android:id="@+id/bottomLin">
+                android:id="@+id/bottomLin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="2dp">
 
                 <ImageView
-                     android:layout_height="35dp"
-                     android:layout_width="35dp"
-                     android:src="@drawable/play_icon"
-                     style="@style/images_style"
-                     android:id="@+id/play" />
+                    android:id="@+id/play"
+                    style="@style/images_style"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/play_icon" />
 
                 <ImageView
-                     android:layout_height="35dp"
-                     android:layout_width="35dp"
-                     android:src="@drawable/grid_icon"
-                     android:background="@drawable/select_style"
-                     style="@style/images_style"
-                     android:id="@+id/grid" />
+                    android:id="@+id/grid"
+                    style="@style/images_style"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/select_style"
+                    android:src="@drawable/grid_icon" />
 
                 <ImageView
-                     android:layout_height="35dp"
-                     android:layout_width="35dp"
-                     android:src="@drawable/move_icon"
-                     style="@style/images_style"
-                     android:id="@+id/move" />
+                    android:id="@+id/move"
+                    style="@style/images_style"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/move_icon" />
 
                 <ImageView
-                     android:layout_height="35dp"
-                     android:layout_width="35dp"
-                     android:src="@drawable/scale_icon"
-                     style="@style/images_style"
-                     android:id="@+id/scale" />
+                    android:id="@+id/scale"
+                    style="@style/images_style"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/scale_icon" />
 
                 <ImageView
-                     android:layout_height="35dp"
-                     android:layout_width="35dp"
-                     android:src="@drawable/rotate_icon"
-                     style="@style/images_style"
-                     android:id="@+id/rotate" />
+                    android:id="@+id/rotate"
+                    style="@style/images_style"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/rotate_icon" />
 
                 <LinearLayout
-                     android:layout_height="wrap_content"
-                     android:layout_width="wrap_content"
-                     android:gravity="center_vertical"
-                     android:background="@drawable/imgs_style"
-                     android:orientation="horizontal"
-                     android:layout_marginRight="5dp"
-                     android:id="@+id/linear5">
+                    android:id="@+id/linear5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/imgs_style"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
                     <TextView
-                         android:layout_height="wrap_content"
-                         android:layout_width="wrap_content"
-                         android:visibility="gone"
-                         android:paddingRight="8dp"
-                         android:paddingBottom="2dp"
-                         android:textSize="12sp"
-                         android:paddingLeft="8dp"
-                         android:textColor="#FFFFFF"
-                         android:id="@+id/textview1"
-                         android:paddingTop="2dp"
-                         android:text="Body"
-                         android:textStyle="bold" />
+                        android:id="@+id/textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="2dp"
+                        android:text="Body"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
 
                     <androidx.appcompat.widget.AppCompatSpinner
-                         android:layout_height="wrap_content"
-                         android:layout_width="wrap_content"
-                         android:visibility="gone"
-                         android:padding="2dp"
-                         android:spinnerMode="dialog"
-                         android:layout_weight="1"
-                         android:id="@+id/bodiesSpinner" />
+                        android:id="@+id/bodiesSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:spinnerMode="dialog"
+                        android:visibility="gone" />
 
                     <ImageView
-                         android:layout_height="35dp"
-                         android:layout_width="35dp"
-                         android:src="@drawable/ic_delete_black"
-                         style="@style/images_style"
-                         android:id="@+id/deleteBody" />
+                        android:id="@+id/deleteBody"
+                        style="@style/images_style"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_delete_black" />
 
                 </LinearLayout>
 
                 <ImageView
-                     android:layout_height="35dp"
-                     android:layout_width="35dp"
-                     android:src="@drawable/undo"
-                     style="@style/images_style"
-                     android:id="@+id/undo" />
+                    android:id="@+id/undo"
+                    style="@style/images_style"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/undo" />
 
                 <ImageView
-                     android:layout_height="35dp"
-                     android:layout_width="35dp"
-                     android:src="@drawable/redo"
-                     style="@style/images_style"
-                     android:id="@+id/redo" />
+                    android:id="@+id/redo"
+                    style="@style/images_style"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/redo" />
 
                 <ImageView
-                     android:layout_height="35dp"
-                     android:layout_width="35dp"
-                     android:src="@drawable/center_camera"
-                     style="@style/images_style"
-                     android:id="@+id/center_camera" />
+                    android:id="@+id/center_camera"
+                    style="@style/images_style"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/center_camera" />
 
             </LinearLayout>
 

@@ -3,6 +3,7 @@ package com.star4droid.star2d;
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import com.star4droid.star2d.Helpers.EngineSettings;
 import com.star4droid.star2d.evo.R;
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 		Utils.setLanguage(this);
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_main);
 		EngineSettings.init(this);
 		new Timer().schedule(new TimerTask(){

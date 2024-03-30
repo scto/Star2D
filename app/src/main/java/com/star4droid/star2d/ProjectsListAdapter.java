@@ -169,24 +169,21 @@ public class ProjectsListAdapter extends BaseAdapter {
 		});
 		
 		final LinearLayout linear = view.findViewById(R.id.linear);
-		linear.setOnClickListener(new View.OnClickListener(){
-			@Override
-			public void onClick(View v) {
-				/*
-				Intent intent = new Intent();
-				intent.putExtra("project",arrayList.get(position));
-				intent.setClass(context,EditorActivity.class);
-				context.startActivity(intent);
-				*/
-				Intent intent = new Intent(context, EditorActivity.class);
-				intent.putExtra("project",arrayList.get(position));
-				Bundle bundle =
-				ActivityOptionsCompat.makeCustomAnimation(
-				context, android.R.anim.fade_in, android.R.anim.fade_out).toBundle();
-				context.startActivity(intent, bundle);
-				
-			}
-		});
+		linear.setOnClickListener(v -> {
+            /*
+            Intent intent = new Intent();
+            intent.putExtra("project",arrayList.get(position));
+            intent.setClass(context,EditorActivity.class);
+            context.startActivity(intent);
+            */
+            Intent intent = new Intent(context, EditorActivity.class);
+            intent.putExtra("project",arrayList.get(position));
+            Bundle bundle =
+            ActivityOptionsCompat.makeCustomAnimation(
+            context, android.R.anim.fade_in, android.R.anim.fade_out).toBundle();
+            context.startActivity(intent, bundle);
+
+        });
 		return view;
 	}
 	

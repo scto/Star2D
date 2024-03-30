@@ -1,18 +1,26 @@
 package com.star4droid.star2d.Adapters;
 
+import android.content.ContentResolver;
 import android.content.Context;
+import android.database.Cursor;
 import android.net.Uri;
+import android.provider.MediaStore;
+import android.util.Log;
 import android.view.ViewGroup;
 import android.view.View;
 
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AlertDialog;
 import com.star4droid.star2d.Helpers.FileUtil;
 import com.star4droid.star2d.Items.Editor;
 import com.star4droid.star2d.evo.R;
 import com.star4droid.star2d.Utils;
+
+import java.nio.file.LinkOption;
 import java.util.ArrayList;
 
 public class ImagesSelectorAdapter extends BaseAdapter {
@@ -33,7 +41,7 @@ public class ImagesSelectorAdapter extends BaseAdapter {
 		grid.setHorizontalSpacing(1);
 		grid.setVerticalSpacing(1);
 		grid.setNumColumns(4);
-		grid.setAdapter(new ImagesSelectorAdapter(context,getImagesList(editor),dialog).setOnSelect(onSelect));
+		grid.setAdapter(new ImagesSelectorAdapter(context, getImagesList(editor),dialog).setOnSelect(onSelect));
 		dialog.setView(grid);
 		Utils.hideSystemUi(dialog.getWindow());
 		dialog.show();
@@ -41,10 +49,13 @@ public class ImagesSelectorAdapter extends BaseAdapter {
 	
 	public static ArrayList<String> getImagesList(Editor editor){
 		ArrayList<String> filesList= new ArrayList<>();
-		FileUtil.listDir(editor.getProject().getImagesPath(),filesList);
+		FileUtil.listDir(editor.getProject().getImagesPath(), filesList);
+
+		Log.d("Path", editor.getProject().getImagesPath());
 		return filesList;
 	}
-	
+
+
 	@Override
 	public int getCount() {
 	    return imagesList.size();
@@ -74,33 +85,33 @@ public class ImagesSelectorAdapter extends BaseAdapter {
 		else if(FileUtil.isDirectory(imagesList.get(position))){
 			view.setImageDrawable(context.getDrawable(R.drawable.ic_filter_black));
 		} else if(imagesList.get(position).equals("...")) view.setImageDrawable(context.getDrawable(R.drawable.right_black));
-		view.setOnClickListener(new ImageView.OnClickListener(){
-			@Override
-			public void onClick(View arg0) {
-				String path=imagesList.get(position);
-				if(FileUtil.isDirectory(path)){
-					interals.add(Uri.parse(path).getLastPathSegment());
-					imagesList.clear();
-					imagesList.add("...");
-					FileUtil.listDir(path,imagesList);
-					currentPath=path;
-					notifyDataSetChanged();
-					return;
-				}
-				if(path.equals("...")) {
-					imagesList.clear();
-					interals.remove(interals.size()-1);
-					if(interals.size()!=0) interals.add("...");
-					currentPath = Utils.removeLastFromPath(currentPath);
-					FileUtil.listDir(currentPath,imagesList);
-					notifyDataSetChanged();
-					return;
-				}
-				String p="/";
-				for(String in:interals) p+=in+Utils.seperator;
-				if(onSelectImage!=null&&FileUtil.isFile(path)) onSelectImage.onSelect(currentPath+p+Uri.parse(path).getLastPathSegment(),dialog);
+		view.setOnClickListener(arg0 -> {
+            String path=imagesList.get(position);
+            if(FileUtil.isDirectory(path)){
+                interals.add(Uri.parse(path).getLastPathSegment());
+                imagesList.clear();
+                imagesList.add("...");
+                FileUtil.listDir(path,imagesList);
+                currentPath=path;
+                notifyDataSetChanged();
+                return;
+            }
+            if(path.equals("...")) {
+                imagesList.clear();
+                interals.remove(interals.size()-1);
+                if(interals.size()!=0) interals.add("...");
+                currentPath = Utils.removeLastFromPath(currentPath);
+                FileUtil.listDir(currentPath,imagesList);
+                notifyDataSetChanged();
+                return;
+            }
+            StringBuilder p= new StringBuilder("/");
+            for(String in:interals) p.append(in).append(Utils.seperator);
+            if(onSelectImage!=null&&FileUtil.isFile(path)){
+				onSelectImage.onSelect(currentPath+p+Uri.parse(path).getLastPathSegment(), dialog);
+				Toast.makeText(context, "Image Added !!", Toast.LENGTH_SHORT).show();
 			}
-		});
+        });
 		return view;
 	}
 	
