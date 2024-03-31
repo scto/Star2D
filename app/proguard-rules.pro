@@ -19,3 +19,9 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Keep java.lang.reflect classes and methods
+-keep class java.lang.reflect.** { *; }
+
+# Keep all classes and members in the java package
+-keep class java.** { *; }
