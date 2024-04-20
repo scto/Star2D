@@ -5,31 +5,16 @@
       "selection": {
         "end": {
           "column": 10,
-          "index": 732,
-          "line": 36
+          "index": 772,
+          "line": 38
         },
         "start": {
           "column": 10,
-          "index": 732,
-          "line": 36
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Star2D/app/src/main/java/com/star4droid/star2d/Fragments/EventsFragment.java",
-      "selection": {
-        "end": {
-          "column": 51,
-          "index": 4982,
-          "line": 149
-        },
-        "start": {
-          "column": 51,
-          "index": 4982,
-          "line": 149
+          "index": 772,
+          "line": 38
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Star2D/app/src/main/java/com/star4droid/star2d/Fragments/EventsFragment.java"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Star2D/app/build.gradle"
 }
