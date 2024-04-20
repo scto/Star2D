@@ -44,7 +44,22 @@
           "line": 0
         }
       }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Star2D/app/src/main/res/layout/body_image_card.xml",
+      "selection": {
+        "end": {
+          "column": 30,
+          "index": 685,
+          "line": 19
+        },
+        "start": {
+          "column": 30,
+          "index": 685,
+          "line": 19
+        }
+      }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Star2D/app/build.gradle"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Star2D/app/src/main/res/layout/body_image_card.xml"
 }
