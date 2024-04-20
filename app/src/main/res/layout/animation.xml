@@ -22,7 +22,6 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_margin="12dp"
-				android:background="#1E1E1E"
 				android:gravity="center_horizontal|center_vertical"
 				android:orientation="vertical">
 				<TextView
@@ -34,13 +33,12 @@
 					android:text="@string/result"
 					android:textSize="12sp"
 					android:textStyle="bold"
-					android:textColor="#FFFFFF" />
+					android:textColor="?attr/colorOnSurface" />
 				<LinearLayout
 					android:id="@+id/linear2"
 					android:layout_width="130dp"
 					android:layout_height="wrap_content"
 					android:padding="3dp"
-					android:background="#4F4F4E"
 					android:gravity="center_vertical"
 					android:orientation="horizontal">
 					<LinearLayout
@@ -48,7 +46,6 @@
 						android:layout_width="80dp"
 						android:layout_height="80dp"
 						android:layout_margin="3dp"
-						android:background="@drawable/ic_theaters_black"
 						android:src="@drawable/ic_theaters_black"
 						android:scaleType="fitCenter" />
 					<ImageView
@@ -68,7 +65,6 @@
 				android:layout_marginRight="12dp"
 				android:layout_marginBottom="12dp"
 				android:padding="2dp"
-				android:background="#4F4F4E"
 				android:orientation="vertical">
 				<TextView
 					android:id="@+id/textview4"
@@ -79,19 +75,18 @@
 					android:text="@string/frame_duration"
 					android:textSize="10sp"
 					android:textStyle="bold"
-					android:textColor="#ECEFF1" />
+					android:textColor="?attr/colorOnSurface" />
 				<EditText
 					android:id="@+id/edittext1"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:padding="8dp"
-					android:background="#3C3C3C"
 					android:gravity="center_horizontal|center_vertical"
 					android:text="450.0"
 					android:textSize="12sp"
-					android:textColor="#FFFFFF"
+					android:textColor="?attr/colorOnSurface"
 					android:hint="Duration"
-					android:textColorHint="#CFD8DC"
+					android:textColorHint="?attr/colorOnSurface"
 					android:singleLine="true"
 					android:inputType="phone" />
 			</LinearLayout>
@@ -113,11 +108,10 @@
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:padding="8dp"
-					android:background="#1E1E1E"
 					android:text="@string/your_images"
 					android:textSize="12sp"
 					android:textStyle="bold"
-					android:textColor="#FFFFFF" />
+					android:textColor="?attr/colorOnSurface" />
 				<ListView
 					android:id="@+id/listview1"
 					android:layout_width="match_parent"
@@ -140,11 +134,10 @@
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:padding="8dp"
-					android:background="#1E1E1E"
 					android:text="@string/animation_pictures"
 					android:textSize="12sp"
 					android:textStyle="bold"
-					android:textColor="#FFFFFF" />
+					android:textColor="?attr/colorOnSurface" />
 				<ListView
 					android:id="@+id/animationsList"
 					android:layout_width="match_parent"

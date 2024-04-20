@@ -20,7 +20,7 @@ public class CheckboxInput extends AppCompatCheckBox implements JointInput {
 		super(ctx);
 		setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT));
 		setText(field);
-		setTextColor(ctx.getColor(R.color.text_color));
+		setTextColor(ctx.getColor(R.color.md_theme_primary));
 		//setBackgroundColor(Color.BLACK);
 		try {
 			Field fld = joint.getClass().getField(field);

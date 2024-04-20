@@ -1,63 +1,71 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-	<androidx.cardview.widget.CardView
-		android:layout_height="35dp"
-		android:layout_width="match_parent"
-		app:cardCornerRadius="3dp"
-		android:id="@+id/card"
-		>
-		<LinearLayout
-			android:layout_height="match_parent"
-			android:layout_width="match_parent"
-			android:id="@+id/linear"
-			android:gravity="center"
-			android:orientation="horizontal">
-			<LinearLayout
-				android:layout_height="match_parent"
-				android:layout_width="3dp"
-                android:background="@color/button_background"
-				/>
-			<ImageView
-				android:layout_height="match_parent"
-				android:layout_width="35dp"
-				android:src="@drawable/icon"
-				android:padding="3dp"
-				android:id="@+id/image"
-				/>
-			<TextView
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:maxLines="1"
-				android:gravity="center"
-				android:text="Name"
-				android:layout_weight="1"
-				android:id="@+id/name"
-				android:textColor="@color/text_color"
-				/>
-			<ImageView
-				android:layout_height="match_parent"
-				android:layout_width="25dp"
-				android:src="@drawable/ic_visible"
-				android:id="@+id/hide"
-				app:tint="@color/text_color"
-				/>
-			<ImageView
-				android:layout_height="match_parent"
-				android:layout_width="25dp"
-				android:src="@drawable/lock"
-				android:id="@+id/lock"
-				app:tint="@color/text_color"
-				/>
-			<ImageView
-				android:layout_width="35dp"
-				android:layout_height="match_parent"
-				android:src="@drawable/dots_vertical"
-				android:id="@+id/menu_btn"
-				app:tint="@color/text_color"
-				/>
-		</LinearLayout>
-	</androidx.cardview.widget.CardView>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+     <com.google.android.material.card.MaterialCardView
+         android:layout_height="35dp"
+         android:layout_width="match_parent"
+         app:cardCornerRadius="3dp"
+         android:id="@+id/card"
+         style="?attr/materialCardViewElevatedStyle" >
+            
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:gravity="center"
+             android:orientation="horizontal"
+             android:id="@+id/linear">
+
+            <LinearLayout
+                 android:layout_height="match_parent"
+                 android:layout_width="3dp" >
+
+            </LinearLayout>
+
+            <ImageView
+                 android:layout_height="match_parent"
+                 android:layout_width="35dp"
+                 android:src="@drawable/icon"
+                 android:padding="3dp"
+                 android:id="@+id/image" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center"
+                 android:textColor="?attr/colorOnSurface"
+                 android:maxLines="1"
+                 android:layout_weight="1"
+                 android:text="Name"
+                 android:id="@+id/name" />
+
+            <ImageView
+                 android:layout_height="match_parent"
+                 android:layout_width="25dp"
+                 android:src="@drawable/ic_visible"
+                 android:tint="?attr/colorOnSurface"
+                 android:id="@+id/hide" />
+
+            <ImageView
+                 android:layout_height="match_parent"
+                 android:layout_width="25dp"
+                 android:src="@drawable/lock"
+                 android:tint="?attr/colorOnSurface"
+                 android:id="@+id/lock" />
+
+            <ImageView
+                 android:layout_height="match_parent"
+                 android:layout_width="35dp"
+                 android:src="@drawable/dots_vertical"
+                 android:tint="?attr/colorOnSurface"
+                 android:id="@+id/menu_btn" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
 </LinearLayout>

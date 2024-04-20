@@ -24,7 +24,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/button_background"
                 android:scrollbars="none">
 
                 <LinearLayout
@@ -37,14 +36,12 @@
 
                     <ImageView
                         android:id="@+id/rotateScreen"
-                        style="@style/images_style"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:src="@drawable/screen_rotation" />
 
                     <ImageView
                         android:id="@+id/addBody"
-                        style="@style/images_style"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:src="@drawable/ic_add_black" />
@@ -54,7 +51,6 @@
                         android:layout_width="260dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
-                        android:background="@drawable/imgs_style"
                         android:gravity="center_vertical"
                         android:orientation="horizontal">
 
@@ -64,7 +60,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="Scene"
-                            android:textColor="@color/text_color"
+                            android:textColor="?attr/colorOnSurface"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -78,21 +74,18 @@
 
                         <ImageView
                             android:id="@+id/deleteScene"
-                            style="@style/images_style"
                             android:layout_width="35dp"
                             android:layout_height="35dp"
                             android:src="@drawable/ic_delete_black" />
 
                         <ImageView
                             android:id="@+id/copyScene"
-                            style="@style/images_style"
                             android:layout_width="35dp"
                             android:layout_height="35dp"
                             android:src="@drawable/copy_icon" />
 
                         <ImageView
                             android:id="@+id/renameScene"
-                            style="@style/images_style"
                             android:layout_width="35dp"
                             android:layout_height="35dp"
                             android:src="@drawable/edit_icon" />
@@ -101,28 +94,24 @@
 
                     <ImageView
                         android:id="@+id/save"
-                        style="@style/images_style"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:src="@drawable/save_icon" />
 
                     <ImageView
                         android:id="@+id/files_manager"
-                        style="@style/images_style"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:src="@drawable/ic_description_black" />
 
                     <ImageView
                         android:id="@+id/sceneColor"
-                        style="@style/images_style"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:src="@drawable/palette_swatch" />
 
                     <ImageView
                         android:id="@+id/lock"
-                        style="@style/images_style"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:src="@drawable/lock" />
@@ -141,9 +130,7 @@
                 android:id="@+id/back"
                 android:layout_width="35dp"
                 android:layout_height="match_parent"
-                android:background="@color/button_background"
-                android:src="@drawable/back_arrow"
-                app:tint="@color/text_color" />
+                android:src="@drawable/back_arrow" />
 
         </LinearLayout>
 
@@ -178,7 +165,6 @@
 
                 <ImageView
                     android:id="@+id/right_swipe"
-                    style="@style/images_style"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_gravity="center_vertical|right"
@@ -189,7 +175,6 @@
                     android:id="@+id/right_linear"
                     android:layout_width="1px"
                     android:layout_height="match_parent"
-                    android:background="@color/button_background"
                     android:gravity="right"
                     android:orientation="horizontal">
 
@@ -208,7 +193,6 @@
             android:id="@+id/bottom_scroll"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/button_background"
             android:scrollbars="none">
 
             <LinearLayout
@@ -221,36 +205,30 @@
 
                 <ImageView
                     android:id="@+id/play"
-                    style="@style/images_style"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:src="@drawable/play_icon" />
 
                 <ImageView
                     android:id="@+id/grid"
-                    style="@style/images_style"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:background="@drawable/select_style"
                     android:src="@drawable/grid_icon" />
 
                 <ImageView
                     android:id="@+id/move"
-                    style="@style/images_style"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:src="@drawable/move_icon" />
 
                 <ImageView
                     android:id="@+id/scale"
-                    style="@style/images_style"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:src="@drawable/scale_icon" />
 
                 <ImageView
                     android:id="@+id/rotate"
-                    style="@style/images_style"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:src="@drawable/rotate_icon" />
@@ -260,7 +238,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
-                    android:background="@drawable/imgs_style"
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
@@ -273,7 +250,7 @@
                         android:paddingRight="8dp"
                         android:paddingBottom="2dp"
                         android:text="Body"
-                        android:textColor="#FFFFFF"
+                        android:textColor="?attr/colorOnSurface"
                         android:textSize="12sp"
                         android:textStyle="bold"
                         android:visibility="gone" />
@@ -289,7 +266,6 @@
 
                     <ImageView
                         android:id="@+id/deleteBody"
-                        style="@style/images_style"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:src="@drawable/ic_delete_black" />
@@ -298,21 +274,18 @@
 
                 <ImageView
                     android:id="@+id/undo"
-                    style="@style/images_style"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:src="@drawable/undo" />
 
                 <ImageView
                     android:id="@+id/redo"
-                    style="@style/images_style"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:src="@drawable/redo" />
 
                 <ImageView
                     android:id="@+id/center_camera"
-                    style="@style/images_style"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:src="@drawable/center_camera" />

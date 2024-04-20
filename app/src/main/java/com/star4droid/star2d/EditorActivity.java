@@ -83,7 +83,7 @@ public class EditorActivity extends AppCompatActivity {
                 TextView textView = (TextView) view;
                 textView.setPadding(8, 12, 8, 12);
                 // Set the text color
-                textView.setTextColor(getContext().getColor(R.color.text_color));
+                textView.setTextColor(getContext().getColor(R.color.md_theme_primary));
                 //textView.setBackgroundColor(getContext().getColor(R.color.button_background));
 				/*
 				if(Build.VERSION.SDK_INT<30)
@@ -104,8 +104,8 @@ public class EditorActivity extends AppCompatActivity {
                 textView.setPadding(8, 12, 8, 12);//left ,top, right, bottom
 
                 // Set the text color
-                textView.setTextColor(getContext().getColor(R.color.text_color));
-                textView.setBackgroundColor(getContext().getColor(R.color.button_background));
+                textView.setTextColor(getContext().getColor(R.color.md_theme_primary));
+                textView.setBackgroundColor(getContext().getColor(R.color.md_theme_background));
 				/*
 				if(Build.VERSION.SDK_INT<30)
 					textView.setBackgroundDrawable(getContext().getDrawable(R.drawable.section_field));
@@ -385,8 +385,8 @@ public class EditorActivity extends AppCompatActivity {
     }
 
     public void updateUndoRedo() {
-        undo.setImageTintList(ColorStateList.valueOf(editor.canUndo() ? getColor(R.color.sim_yellow) : getColor(R.color.unselect_color)));
-        redo.setImageTintList(ColorStateList.valueOf(editor.canRedo() ? getColor(R.color.sim_yellow) : getColor(R.color.unselect_color)));
+        undo.setImageTintList(ColorStateList.valueOf(editor.canUndo() ? getColor(R.color.md_theme_primary) : getColor(R.color.md_theme_secondary)));
+        redo.setImageTintList(ColorStateList.valueOf(editor.canRedo() ? getColor(R.color.md_theme_primary) : getColor(R.color.md_theme_secondary)));
     }
 
     public void selectMode(View v) {

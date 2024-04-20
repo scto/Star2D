@@ -19,13 +19,12 @@
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@drawable/icon"
-        android:supportsRtl="false"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
             android:name="com.star4droid.star2d.MainActivity"
-            android:exported="true"
-            android:theme="@style/AppTheme.FullScreen">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -34,24 +33,21 @@
 
         <activity
             android:name="com.star4droid.star2d.ProjectsActivity"
-            android:exported="true"
-            android:theme="@style/AppTheme.FullScreen" />
+            android:exported="true" />
         <activity
             android:name="com.star4droid.star2d.EditorActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
             android:exported="true"
             android:hardwareAccelerated="true"
             android:screenOrientation="landscape"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/AppTheme.FullScreen"/>
+            android:supportsPictureInPicture="true" />
         <activity
             android:name="com.star4droid.star2d.PortraitPlayer"
             android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
             android:exported="true"
             android:hardwareAccelerated="true"
             android:screenOrientation="portrait"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/AppTheme.FullScreen"/>
+            android:supportsPictureInPicture="true" />
         <activity
             android:name="com.star4droid.star2d.Activities.CodeEditorActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
@@ -59,7 +55,6 @@
             android:hardwareAccelerated="true"
             android:screenOrientation="portrait"
             android:supportsPictureInPicture="true"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateVisible" />
         <activity
             android:name="com.star4droid.star2d.LandscapePlayer"
@@ -67,33 +62,28 @@
             android:exported="true"
             android:hardwareAccelerated="true"
             android:screenOrientation="landscape"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/AppTheme.FullScreen"/>
+            android:supportsPictureInPicture="true" />
         <activity
             android:name="com.star4droid.star2d.Activities.FilesManagerActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
             android:exported="true"
             android:hardwareAccelerated="true"
             android:screenOrientation="landscape"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/AppTheme.FullScreen"/>
+            android:supportsPictureInPicture="true" />
         <activity
             android:name="com.star4droid.star2d.Activities.SettingsActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
             android:exported="true"
             android:hardwareAccelerated="true"
             android:screenOrientation="landscape"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/AppTheme.FullScreen" />
+            android:supportsPictureInPicture="true" />
         <activity
             android:name="com.star4droid.star2d.Activities.AnimationActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
             android:exported="true"
             android:hardwareAccelerated="true"
             android:screenOrientation="landscape"
-            android:supportsPictureInPicture="true"
-            android:theme="@style/AppTheme.FullScreen"/>
-
+            android:supportsPictureInPicture="true" />
         <service
             android:name="com.star4droid.star2d.Activities.IndexingService"
             android:enabled="true"

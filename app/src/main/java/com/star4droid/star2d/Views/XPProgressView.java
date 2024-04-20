@@ -34,9 +34,9 @@ public class XPProgressView extends View {
 	
 	private void init() {
 		squarePaint = new Paint();
-		squarePaint.setColor(getContext().getColor(R.color.sim_yellow));
+		squarePaint.setColor(getContext().getColor(R.color.md_theme_primary));
 		squarePaint.setStyle(Paint.Style.FILL);
-		setBackground(new GradientDrawable() { public GradientDrawable getIns(int a, int b, int c, int d) { this.setCornerRadius(a); this.setStroke(b, c); this.setColor(d); return this; } }.getIns(5, 2, getContext().getColor(com.star4droid.star2d.evo.R.color.text_color), Color.TRANSPARENT));
+		setBackground(new GradientDrawable() { public GradientDrawable getIns(int a, int b, int c, int d) { this.setCornerRadius(a); this.setStroke(b, c); this.setColor(d); return this; } }.getIns(5, 2, getContext().getColor(com.star4droid.star2d.evo.R.color.md_theme_primary), Color.TRANSPARENT));
 		currentX = 0;
 	}
 	

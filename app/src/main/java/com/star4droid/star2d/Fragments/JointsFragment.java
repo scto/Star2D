@@ -197,7 +197,7 @@ public class JointsFragment extends Fragment {
 					if(hash.get("joint").toString().contains("GearJoint")) continue;
 					final MaterialButton button = new MaterialButton(getContext());
 					button.setText(hash.get("joint").toString().replace("Def",""));
-					button.setTextColor(getContext().getColor(R.color.text_color));
+					button.setTextColor(getContext().getColor(R.color.md_theme_primary));
 					linear.addView(button);
 					button.setCornerRadius(8);
 					linear.setPadding(12,12,12,12);

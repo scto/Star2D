@@ -87,4 +87,4 @@ lint/tmp/
 
 # AndroidIDE
 .androidide/
-.androidide/editor
+.androidide/editor/

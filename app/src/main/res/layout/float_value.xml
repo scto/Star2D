@@ -17,12 +17,11 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
-            android:background="@drawable/section_field"
             android:gravity="center_horizontal|center_vertical"
             android:padding="2dp"
             android:singleLine="true"
             android:text="TextView"
-            android:textColor="@color/text_color"
+            android:textColor="?attr/colorOnSurface"
             android:textSize="8sp"
             android:textStyle="bold" />
 
@@ -37,14 +36,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/section_field"
                 android:gravity="center_horizontal|center_vertical"
                 android:hint="Nothing"
                 android:padding="2dp"
                 android:singleLine="true"
                 android:text="TextView"
-                android:textColor="@color/text_color"
-                android:textColorHint="#FFFFFF"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/colorOnSurface"
                 android:textSize="8sp"
                 android:textStyle="bold" />
 
@@ -55,7 +53,7 @@
                 android:padding="2dp"
                 android:src="@drawable/drag_control"
                 android:visibility="invisible"
-                app:tint="@color/text_color" />
+                android:tint="?attr/colorOnSurface" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

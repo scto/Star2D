@@ -1,4 +1,5 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -11,7 +12,6 @@
         app:drawerLayoutCornerSize="0dp"
         app:headerLayout="@layout/projects_navigation_header_layout"
         app:itemHorizontalPadding="12dp"
-        style="@style/Widget.App.NavigationView"
         app:itemShapeInsetEnd="0dp"
         app:itemShapeInsetStart="0dp"
         app:itemVerticalPadding="2dp"
@@ -44,7 +44,7 @@
                 android:layout_marginEnd="5dp"
                 android:clickable="true"
                 android:text="@string/settings"
-                android:textColor="@color/text_color" />
+                android:textColor="?attr/colorOnSurface" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/restore"
@@ -55,7 +55,7 @@
                 android:layout_marginEnd="5dp"
                 android:clickable="true"
                 android:text="@string/restore"
-                android:textColor="@color/text_color" />
+                android:textColor="?attr/colorOnSurface" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/addProject"
@@ -64,7 +64,7 @@
                 style="@style/Widget.Material3.Button.OutlinedButton"
                 android:clickable="true"
                 android:text="@string/new_project"
-                android:textColor="@color/text_color" />
+                android:textColor="?attr/colorOnSurface" />
 
         </LinearLayout>
 

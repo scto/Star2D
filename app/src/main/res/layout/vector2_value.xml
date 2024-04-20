@@ -9,7 +9,6 @@
 		android:layout_width="match_parent"
 		android:text="Name.."
 		android:gravity="center"
-		
 		android:id="@+id/name"/>
 	<LinearLayout
 		android:layout_height="wrap_content"
@@ -22,7 +21,7 @@
 		android:id="@+id/pick"
 		android:scaleType="fitCenter"
 		android:padding="4dp"
-		app:tint="@color/text_color"
+        app:tint="?attr/colorOnSurface"
 		android:src="@drawable/mouse_click"/>
 		<com.google.android.material.textfield.TextInputLayout
 			android:layout_height="wrap_content"
