@@ -147,7 +147,7 @@ public class EventsFragment extends Fragment {
 		}
 		
 		@Override
-		public void onBindViewHolder(ViewHolder _holder, final int _position) {
+		public void onBindViewHolder(ViewHolder _holder, int _position) {
 			View _view = _holder.itemView;
 			
 			final LinearLayout linear1 = _view.findViewById(R.id.linear1);
