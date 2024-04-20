@@ -18,7 +18,8 @@
 			<LinearLayout
 				android:layout_height="match_parent"
 				android:layout_width="3dp"
-				android:background="#FF1600"
+				//android:background="#FF1600"
+                android:backgroun="@color/button_background"
 				/>
 			<ImageView
 				android:layout_height="match_parent"
